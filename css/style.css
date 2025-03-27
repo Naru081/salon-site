@@ -2,56 +2,62 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #FFFCF7; /* 背景色を薄いグレーに */
+    background-color: #f9f9f9; /* 背景色を薄いベージュに */
+    color: #333; /* テキストカラー */
     margin: 0;
     padding: 0;
 }
 
 /* ヘッダー */
 header {
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-    padding: 10px 0;
+    background-color: #ffffff; /* ヘッダー背景を白に */
+    border-bottom: 1px solid #ddd; /* 下線を追加 */
 }
 
 .navbar {
-    justify-content: center;
+    padding: 10px 20px;
 }
 
 .navbar .nav-link {
-    color: #333;
+    color: #333; /* ナビゲーションリンクの色 */
     font-weight: bold;
-    margin: 0 15px;
-    transition: color 0.3s ease;
+    margin-right: 15px;
 }
 
 .navbar .nav-link:hover {
-    color: #007bff; /* ホバー時に青色 */
+    color: #007bff; /* ホバー時の色 */
 }
 
 /* トップ画像 */
-section img {
+#top-image img {
     width: 100%;
     height: auto;
     display: block;
 }
 
 /* NEWSセクション */
-.news {
+#news {
     background-color: #fff;
-    padding: 30px;
+    padding: 40px 20px;
     margin: 20px auto;
     max-width: 800px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.news p {
-    font-size: 1.5rem;
+#news .section-title {
+    font-size: 1.8em;
     font-weight: bold;
     margin-bottom: 20px;
+    text-align: center;
     border-bottom: 2px solid #ddd;
     padding-bottom: 10px;
+}
+
+.news-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .news-item {
@@ -60,27 +66,42 @@ section img {
     margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid #ddd;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.news-item p {
+    margin: 0;
+    font-size: 1em;
 }
 
 /* ABOUTセクション */
-.about {
-    background-color: #f9f9f9;
-    padding: 30px;
+/* ABOUTセクション */
+#about {
+    background-color: #fff; /* 背景色を白に */
+    padding: 40px 20px;
     margin: 20px auto;
     max-width: 800px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.about-img {
+#about .section-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.about-content {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
 .about-img img {
-    width: 50%;
+    width: 100%;
+    max-width: 300px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -89,8 +110,13 @@ section img {
     flex: 1;
 }
 
-.about-text p {
-    margin-bottom: 10px;
+.about-info {
+    margin-top: 20px;
+}
+
+.about-info p {
+    margin: 5px 0;
+    font-size: 0.9em;
 }
 
 .linelink {
@@ -99,34 +125,34 @@ section img {
 }
 
 .linelink button {
-    background-color: #00c300;
+    background-color: #28a745;
     color: #fff;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
-    font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-size: 1em;
 }
 
 .linelink button:hover {
-    background-color: #009900;
+    background-color: #218838;
 }
 
 /* MENUセクション */
-.menu {
-    background-color: #e8f5e9; /* 薄い緑色 */
-    padding: 30px;
+#menu {
+    background-color: #fff; /* 背景色を白に */
+    padding: 40px 20px;
     margin: 20px auto;
     max-width: 800px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.menu p {
-    font-size: 1.5rem;
+#menu .section-title {
+    font-size: 1.8em;
     font-weight: bold;
     margin-bottom: 20px;
+    text-align: center;
     border-bottom: 2px solid #ddd;
     padding-bottom: 10px;
 }
@@ -134,26 +160,26 @@ section img {
 .menu-item {
     background-color: #f8f9fa;
     padding: 15px;
-    margin-top: 20px;
+    margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid #ddd;
-    height: 200px; /* ダミー用の高さ */
 }
 
 /* ACCESSセクション */
-.access {
-    background-color: #e8f5e9; /* 薄い緑色 */
-    padding: 30px;
+#access {
+    background-color: #fff; /* 背景色を白に */
+    padding: 40px 20px;
     margin: 20px auto;
     max-width: 800px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.access-tixt p {
-    font-size: 1.5rem;
+#access .section-title {
+    font-size: 1.8em;
     font-weight: bold;
     margin-bottom: 20px;
+    text-align: center;
     border-bottom: 2px solid #ddd;
     padding-bottom: 10px;
 }
@@ -162,8 +188,7 @@ section img {
     width: 100%;
     height: 300px;
     border: none;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 /* フッター */
@@ -175,11 +200,13 @@ footer {
 }
 
 footer .info {
-    margin-bottom: 10px;
+    font-size: 0.9em;
+    margin: 5px 0;
 }
 
 footer .top {
     margin-top: 10px;
-    font-size: 0.9rem;
-    color: #ccc;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
 }
