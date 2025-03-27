@@ -11,56 +11,60 @@
 </head>
 
 <body>
-    <!--　ヘッダー要素　-->
+    <!-- ヘッダー要素 -->
     <header id="header">
         <!-- トップメニュー -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">TOP</a>
-                    <a class="nav-link active" aria-current="page" href="#">ABOUT</a>
-                    <a class="nav-link active" aria-current="page" href="#">ACCESS</a>
-                    <a class="nav-link active" aria-current="page" href="#">MENU</a>
-                    <a class="nav-link active" aria-current="page" href="#">NEWS</a>
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">TOP</a>
+                        <a class="nav-link" href="#">ABOUT</a>
+                        <a class="nav-link" href="#">ACCESS</a>
+                        <a class="nav-link" href="#">MENU</a>
+                        <a class="nav-link" href="#">NEWS</a>
+                    </div>
                 </div>
-              </div>
             </div>
         </nav>
     </header>
 
     <!-- メインコンテンツ -->
-    <main id="main">
+    <main id="main-content">
         <!-- トップ画像 -->
-         <section>
-                <img src="./../img/top.jpg" alt="店名と店の写真">
+        <section id="top-image">
+            <img src="./../img/top.jpg" alt="店名と店の写真">
         </section>
+
         <!-- NEWS -->
-        <div class="news">
-            <p><span class="name"></span>NEWS</p>
-            <!-- ダミーデータ -->
-            <div class="news-item">
-                <p>2026.03/01 重要：価格改定のお知らせ</p>
+        <section id="news">
+            <h2 class="section-title">NEWS</h2>
+            <div class="news-list">
+                <div class="news-item">
+                    <p>2026.03/01 重要：価格改定のお知らせ</p>
+                </div>
+                <div class="news-item"></div>
+                    <p>2026.2/24 臨時休業のお知らせ</p>
+                </div>
+                <div class="news-item">
+                    <p>2025.12/24 年末年始による休業のお知らせ</p>
+                </div>
+                <div class="news-item">
+                    <p>2025.10/02 駐車場についてのお願い</p>
+                </div>
+                <div class="news-item">
+                    <p>2025.08/07 お盆休みによる休業について</p>
+                </div>
             </div>
-            <div class="news-item">
-                <p>2026.2/24 臨時休業のお知らせ</p>
-            </div>
-            <div class="news-item">
-                <p>2025.12/24 年末年始による休業のお知らせ</p>
-            </div>
-            <div class="news-item">
-                <p>2025.10/02 駐車場についてのお願い</p>
-            </div>
-            <div class="news-item">
-                <p>2025.08/07 お盆休みによる休業について</p>
-            </div>
-        </div>
+        </section>
 
         <!-- ABOUT -->
-        <div class="about">
-            <p><span class="name"></span>ABOUT</p>
-            <!-- 店内画像 -->
-            <div class="about-img">
-                <img src="./../img/shop1.jpg" alt="店内の写真">
+        <section id="about">
+            <h2 class="section-title">ABOUT</h2>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="./../img/shop1.jpg" alt="店内の写真">
+                </div>
                 <div class="about-text">
                     <p>
                         初めての方でも安心してご来店いただけるよう、カウンセリングを大切にし、
@@ -108,7 +112,7 @@
         <div class="access">
             <p><span class="name">ACCESS</span></p>
         </div>
-        <div class="access-tixt">
+        <div class="access-tixt"></div>
             <p>MAP</p>
             <!-- GoogleMapを挿入 -->
             <div class="googlemap">
