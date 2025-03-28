@@ -6,10 +6,30 @@ body {
     color: #333; /* テキストカラー */
 }
 
+/* タイトルのスタイル */
 .section-title{
     font-family: "Crimson Text", serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 2.5em;
+    margin: 0 0 0.8em;
+    border-left: solid 1px #000;
+    text-indent: 10px;
+}
+
+/* サブタイトルのスタイル */
+h3 {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    margin: 0 0 1.5em;
+    padding: 0.5em 0;
+    font-size: 1.5em;
+    border-top: solid 1px #000;
+    border-bottom: solid 1px #000;
+    text-indent: 30px;
 }
 
 /* ヘッダー */
