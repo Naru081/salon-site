@@ -6,6 +6,12 @@ body {
     color: #333; /* テキストカラー */
 }
 
+.section-title{
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 /* ヘッダー */
 header {
     background-color: #ffffff; /* ヘッダー背景を白に */
@@ -57,21 +63,11 @@ header {
 
 /* NEWSセクション */
 #news {
-    background-color: #fff;
+    background-color: #FFFCF7;
     padding: 40px 20px;
     margin: 20px auto;
     max-width: 800px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-#news .section-title {
-    font-size: 1.8em;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: center;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 10px;
 }
 
 .news-list {
@@ -82,7 +78,7 @@ header {
 
 .news-item {
     background-color: #f8f9fa;
-    padding: 15px;
+    padding: 18px;
     margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid #ddd;
@@ -103,14 +99,6 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#about .section-title {
-    font-size: 1.8em;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: center;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 10px;
-}
 
 .about-content {
     display: flex;
@@ -167,15 +155,6 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#menu .section-title {
-    font-size: 1.8em;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: center;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 10px;
-}
-
 .menu-item {
     background-color: #f8f9fa;
     padding: 15px;
@@ -194,14 +173,6 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#access .section-title {
-    font-size: 1.8em;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: center;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 10px;
-}
 
 .googlemap iframe {
     width: 100%;
