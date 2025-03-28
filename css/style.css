@@ -2,10 +2,8 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f9f9f9; /* 背景色を薄いベージュに */
+    background-color: #FFFCF7; /* 背景色 */
     color: #333; /* テキストカラー */
-    margin: 0;
-    padding: 0;
 }
 
 /* ヘッダー */
@@ -14,17 +12,27 @@ header {
     border-bottom: 1px solid #ddd; /* 下線を追加 */
 }
 
-.navbar {
-    padding: 10px 20px;
-}
-
-.navbar .nav-link {
+.navbar-nav{
     color: #333; /* ナビゲーションリンクの色 */
+    margin-top: 1em;
+    margin-bottom: 0.5em;
     font-weight: bold;
-    margin-right: 15px;
+    font-size: 1em; /* フォントサイズを調整 */
+    transition: color 0.3s ease; /* ホバー時のスムーズな色変更 */
 }
 
-.navbar .nav-link:hover {
+.nav-fill{
+    display: flex; /* フレックスボックスを有効化 */
+    justify-content: space-around; /* 等間隔で配置 */
+    align-items: center; /* 垂直方向に中央揃え */
+    padding:0; /* 不要な余白を削除 */
+}
+
+.nav-link{
+    padding: 0.5em 3em; /* リンクの余白を調整 */
+}
+
+.navbar-nav:hover {
     color: #007bff; /* ホバー時の色 */
 }
 
@@ -73,7 +81,6 @@ header {
     font-size: 1em;
 }
 
-/* ABOUTセクション */
 /* ABOUTセクション */
 #about {
     background-color: #fff; /* 背景色を白に */
