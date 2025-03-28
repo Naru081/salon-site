@@ -1,6 +1,6 @@
 /* 全体のスタイル */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family:'Arial', sans-serif;
     line-height: 1.6;
     background-color: #FFFCF7; /* 背景色 */
     color: #333; /* テキストカラー */
@@ -13,12 +13,12 @@ header {
 }
 
 .navbar-nav{
-    color: #333; /* ナビゲーションリンクの色 */
     margin-top: 1em;
     margin-bottom: 0.5em;
     font-weight: bold;
     font-size: 1em; /* フォントサイズを調整 */
     transition: color 0.3s ease; /* ホバー時のスムーズな色変更 */
+    color: #2D6A4F;
 }
 
 .nav-fill{
@@ -30,11 +30,24 @@ header {
 
 .nav-link{
     padding: 0.5em 3em; /* リンクの余白を調整 */
+    color: #2D6A4F;
 }
 
-.navbar-nav:hover {
-    color: #007bff; /* ホバー時の色 */
+.nav-link:hover{
+    color: #1B4D3E;;
+    border: 2px solid #333;
 }
+
+
+/* ナビのフォント */
+.nav-link{
+    font-family: "Noto Serif", serif; 
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: regular;
+    font-variation-settings:"wdth" 100;
+}
+
 
 /* トップ画像 */
 #top-image img {
