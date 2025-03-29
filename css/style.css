@@ -2,8 +2,8 @@
 body {
     font-family:'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #FFFCF7; /* 背景色 */
-    color: #333; /* テキストカラー */
+    background-color: #FFFCF7;
+    color: #000;
 }
 
 /* タイトルのスタイル */
@@ -34,7 +34,7 @@ h3 {
 
 /* ヘッダー */
 header {
-    background-color: #ffffff; /* ヘッダー背景を白に */
+    background-color: #ffffff;
 }
 
 /* ナビゲーションのスタイル */
@@ -42,8 +42,8 @@ header {
     margin-top: 1em;
     margin-bottom: 0.5em;
     font-weight: bold;
-    font-size: 1em; /* フォントサイズを調整 */
-    transition: color 0.3s ease; /* ホバー時のスムーズな色変更 */
+    font-size: 1em;
+    transition: color 0.3s ease;
     color: #2D6A4F;
 }
 /* FlexBoxの設定 */
@@ -54,7 +54,7 @@ header {
     padding:0; /* 不要な余白を削除 */
 }
 .nav-link{
-    padding: 0.5em 3em; /* リンクの余白を調整 */
+    padding: 0.5em 3em;
     color: #2D6A4F;
 }
 .nav-link:hover{
