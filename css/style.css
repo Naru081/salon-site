@@ -313,3 +313,13 @@ p.menu-text{
 #footer span.info3{
     margin-left: 3em;
 }
+
+/* ボタンのレイアウト */
+#footer button {
+    background-color: #47e40e00;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
