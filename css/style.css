@@ -340,3 +340,69 @@ p.menu-text{
     cursor: pointer;
     font-size: 1em;
 }
+
+/* メディアクエリの設定 */
+@media (max-width: 768px) {
+    /* ヘッダーの調整 */
+    .nav-fill {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .nav-link {
+        padding: 10px 20px;
+        font-size: 60%;
+    }
+
+    /* ABOUTの調整 */
+    /* LINEリンクを縦並びに */
+    .linelink {
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-start;
+    }
+    .linelink p {
+        margin-left: 0;
+    }
+    /* LINEリンクのボタン設定 */
+    .linelink button {
+        margin-left: 0;
+        width: 50%;
+    }
+    a.linelink{
+        align-items: center;
+    }
+
+    /* NEWSセクションの調整 */
+    #news {
+        padding: 20px 10px;
+        max-width: 100%;
+    }
+
+    .news-item {
+        font-size: 0.9em;
+    }
+
+    /* ABOUTセクションを縦並びに */
+    .about-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    div.about-info{
+        font-size: 60%;
+    }
+
+    .about-img img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* フッターのテキストを中央揃えに */
+    #footer div.info p {
+        font-size: 50%;
+        flex-direction: row;
+        text-align: center;
+        margin-left: 1;
+    }
+}
