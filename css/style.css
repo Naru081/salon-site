@@ -32,9 +32,19 @@ h3 {
     text-indent: 30px;
 }
 
-/* ヘッダー */
+/* ヘッダーを追従させる */
 header {
-    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ffffff;  
+}
+
+/* ヘッダーの下のコンテンツが隠れないように調整 */
+body {
+    padding-top: 50px;
 }
 
 /* ナビゲーションのスタイル */
