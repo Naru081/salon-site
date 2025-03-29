@@ -116,6 +116,7 @@ header {
     padding: 40px 20px;
     margin: 20px auto;
     max-width: 800px;
+    border-radius: 10px;
 }
 
 /* テキストのFlexBox */
@@ -234,14 +235,20 @@ a.linelink{
 
 /* MENUセクション */
 #menu {
-    background-color: #fff; /* 背景色を白に */
+    background-color: #E4F0D0;
     padding: 40px 20px;
-    margin: 20px auto;
+    margin: 40px auto;
     max-width: 800px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
+/* MENUテキスト */
+p.menu-text{
+    font-family: 'Noto Serif', serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: regular;
+}
+/* ダミーボックス */
 .menu-item {
     background-color: #f8f9fa;
     padding: 15px;
@@ -252,12 +259,11 @@ a.linelink{
 
 /* ACCESSセクション */
 #access {
-    background-color: #fff; /* 背景色を白に */
+    background-color: #E4F0D0; /* 背景色を白に */
     padding: 40px 20px;
-    margin: 20px auto;
+    margin: 40px auto;
     max-width: 800px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 
