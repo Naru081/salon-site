@@ -276,7 +276,7 @@ p.menu-text{
 
 /* フッター */
 /* フッターテキストのレイアウト */
-#footer {
+#footer{
     background-color: #738290;
     color: #fff;
     padding: 20px;
@@ -297,13 +297,13 @@ p.menu-text{
     font-size: 70%;
     margin-bottom: 0;
 }
-/* テキストの詳細設定 */
-#fotter div.info{
+#footer div.info{
+    margin-left: 0.5em;
+    margin-bottom: 2em;
     border-left: solid 1px;
 }
-#footer p.info-name{
-    font-size: 1em;
-}
+
+/* テキストの詳細設定 */
 #footer span.info1{
     margin-left: 3em;
 }
