@@ -287,7 +287,7 @@ p.menu-text{
     font-style: regular;
     font-variation-settings:"wdth" 100;
 }
-div.info p{
+#footer div.info p{
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -298,7 +298,7 @@ div.info p{
     margin-bottom: 0;
 }
 /* テキストの詳細設定 */
-div.info{
+#fotter div.info{
     border-left: solid 1px;
 }
 #footer p.info-name{
