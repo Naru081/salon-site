@@ -60,6 +60,13 @@ header {
 .nav-link:hover{
     color: #1B4D3E;;
 }
+/* 元の色を維持 */
+.nav-link:focus,
+.nav-link:active {
+    color: #2D6A4F; 
+    text-decoration: none; 
+    outline: none; 
+}
 /* ナビのフォント */
 .nav-link{
     font-family: "Noto Serif", serif; 
