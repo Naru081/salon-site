@@ -15,9 +15,9 @@ aboutButton.addEventListener('click', (event) => {
     event.preventDefault(); // デフォルトのリンク動作を無効化
     const aboutSection = document.querySelector('#about'); // #aboutセクションを取得
     const offsetTop = aboutSection.offsetTop; // #aboutの位置を取得
-
+    const aboutHeight = 80; // 高さの設定（追従ヘッダー調整用）
     window.scrollTo({
-        top: offsetTop, // #aboutの位置までスクロール
+        top: offsetTop - aboutHeight, // #aboutの位置までスクロール
         behavior: 'smooth'
     });
 });
@@ -28,9 +28,10 @@ menuButton.addEventListener('click', (event) => {
     event.preventDefault(); // デフォルトのリンク動作を無効化
     const aboutSection = document.querySelector('#menu'); // #menuセクションを取得
     const offsetTop = aboutSection.offsetTop; // #menuの位置を取得
+    const aboutHeight = 80; // 高さの設定（追従ヘッダー調整用）
 
     window.scrollTo({
-        top: offsetTop, // #menuの位置までスクロール
+        top: offsetTop - aboutHeight, // #menuの位置までスクロール
         behavior: 'smooth'
     });
 });
@@ -41,9 +42,10 @@ accessButton.addEventListener('click', (event) => {
     event.preventDefault(); // デフォルトのリンク動作を無効化
     const aboutSection = document.querySelector('#access'); // #accessセクションを取得
     const offsetTop = aboutSection.offsetTop; // #accessの位置を取得
+    const aboutHeight = 80; // 高さの設定（追従ヘッダー調整用）
 
     window.scrollTo({
-        top: offsetTop, // #accessの位置までスクロール
+        top: offsetTop - aboutHeight, // #accessの位置までスクロール
         behavior: 'smooth'
     });
 });
@@ -54,9 +56,10 @@ newsButton.addEventListener('click', (event) => {
     event.preventDefault(); // デフォルトのリンク動作を無効化
     const aboutSection = document.querySelector('#news'); // #accessセクションを取得
     const offsetTop = aboutSection.offsetTop; // #accessの位置を取得
+    const aboutHeight = 80; // 高さの設定（追従ヘッダー調整用）
 
     window.scrollTo({
-        top: offsetTop, // #accessの位置までスクロール
+        top: offsetTop - aboutHeight, // #accessの位置までスクロール
         behavior: 'smooth'
     });
 });
