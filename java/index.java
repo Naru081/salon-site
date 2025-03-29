@@ -28,10 +28,10 @@ menuButton.addEventListener('click', (event) => {
     event.preventDefault(); // デフォルトのリンク動作を無効化
     const aboutSection = document.querySelector('#menu'); // #menuセクションを取得
     const offsetTop = aboutSection.offsetTop; // #menuの位置を取得
-    const aboutHeight = 80; // 高さの設定（追従ヘッダー調整用）
+    const menuHeight = 80; // 高さの設定（追従ヘッダー調整用）
 
     window.scrollTo({
-        top: offsetTop - aboutHeight, // #menuの位置までスクロール
+        top: offsetTop - menuHeight, // #menuの位置までanews
         behavior: 'smooth'
     });
 });
@@ -42,10 +42,10 @@ accessButton.addEventListener('click', (event) => {
     event.preventDefault(); // デフォルトのリンク動作を無効化
     const aboutSection = document.querySelector('#access'); // #accessセクションを取得
     const offsetTop = aboutSection.offsetTop; // #accessの位置を取得
-    const aboutHeight = 80; // 高さの設定（追従ヘッダー調整用）
+    const anewsHeight = 80; // 高さの設定（追従ヘッダー調整用）
 
     window.scrollTo({
-        top: offsetTop - aboutHeight, // #accessの位置までスクロール
+        top: offsetTop - anewsHeight, // #accessの位置までスクロール
         behavior: 'smooth'
     });
 });
@@ -54,12 +54,12 @@ const newsButton = document.querySelector('#header a.nav-link.news');
 // クリックした時に#accessまでスクロール
 newsButton.addEventListener('click', (event) => {
     event.preventDefault(); // デフォルトのリンク動作を無効化
-    const aboutSection = document.querySelector('#news'); // #accessセクションを取得
-    const offsetTop = aboutSection.offsetTop; // #accessの位置を取得
-    const aboutHeight = 80; // 高さの設定（追従ヘッダー調整用）
+    const aboutSection = document.querySelector('#news'); // #newsセクションを取得
+    const offsetTop = aboutSection.offsetTop; // #newsの位置を取得
+    const newsHeight = 80; // 高さの設定（追従ヘッダー調整用）
 
     window.scrollTo({
-        top: offsetTop - aboutHeight, // #accessの位置までスクロール
+        top: offsetTop - newsHeight, // #newsの位置までスクロール
         behavior: 'smooth'
     });
 });
