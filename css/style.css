@@ -275,21 +275,41 @@ p.menu-text{
 }
 
 /* フッター */
-footer {
-    background-color: #333;
+/* フッターテキストのレイアウト */
+#footer {
+    background-color: #738290;
     color: #fff;
     padding: 20px;
     text-align: center;
+    font-family: "Noto Serif", serif; 
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: regular;
+    font-variation-settings:"wdth" 100;
 }
-
-footer .info {
-    font-size: 0.9em;
-    margin: 5px 0;
+div.info p{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    text-align: left;
+    align-items: flex-start;
+    margin-left: 1em;
+    font-size: 70%;
+    margin-bottom: 0;
 }
-
-footer .top {
-    margin-top: 10px;
+/* テキストの詳細設定 */
+div.info{
+    border-left: solid 1px;
+}
+#footer p.info-name{
     font-size: 1em;
-    font-weight: bold;
-    cursor: pointer;
+}
+#footer span.info1{
+    margin-left: 3em;
+}
+#footer span.info2{
+    margin-left: 1em;
+}
+#footer span.info3{
+    margin-left: 3em;
 }
