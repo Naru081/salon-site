@@ -35,9 +35,9 @@ h3 {
 /* ヘッダー */
 header {
     background-color: #ffffff; /* ヘッダー背景を白に */
-    border-bottom: 1px solid #ddd; /* 下線を追加 */
 }
 
+/* ナビゲーションのスタイル */
 .navbar-nav{
     margin-top: 1em;
     margin-bottom: 0.5em;
@@ -46,24 +46,20 @@ header {
     transition: color 0.3s ease; /* ホバー時のスムーズな色変更 */
     color: #2D6A4F;
 }
-
+/* FlexBoxの設定 */
 .nav-fill{
     display: flex; /* フレックスボックスを有効化 */
     justify-content: space-around; /* 等間隔で配置 */
     align-items: center; /* 垂直方向に中央揃え */
     padding:0; /* 不要な余白を削除 */
 }
-
 .nav-link{
     padding: 0.5em 3em; /* リンクの余白を調整 */
     color: #2D6A4F;
 }
-
 .nav-link:hover{
     color: #1B4D3E;;
 }
-
-
 /* ナビのフォント */
 .nav-link{
     font-family: "Noto Serif", serif; 
@@ -73,13 +69,13 @@ header {
     font-variation-settings:"wdth" 100;
 }
 
-
 /* トップ画像 */
 #top-image img {
     width: 100%;
     height: auto;
     display: block;
 }
+
 
 /* NEWSセクション */
 #news {
@@ -90,12 +86,14 @@ header {
     border-radius: 10px;
 }
 
+/* ニュースリストの枠組み */
 .news-list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
+/* ニュースリストの各アイテム */
 .news-item {
     background-color: #f8f9fa;
     padding: 18px;
@@ -104,65 +102,134 @@ header {
     border: 1px solid #ddd;
 }
 
+/* ダミーテキスト */
 .news-item p {
     margin: 0;
     font-size: 1em;
 }
 
+
 /* ABOUTセクション */
+/* セクションの枠組み */
 #about {
-    background-color: #fff; /* 背景色を白に */
+    background-color: #E4F0D0; /* 背景色を白に */
     padding: 40px 20px;
     margin: 20px auto;
     max-width: 800px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-
+/* テキストのFlexBox */
 .about-content {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     gap: 20px;
+    align-items: flex-start;
 }
 
+/* 店内写真 */
 .about-img img {
     width: 100%;
     max-width: 300px;
+    height: 500px;
+    object-fit: cover; /* 画像の比率を維持 */
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.about-text {
-    flex: 1;
+/* 画像とテキストのレイアウトを保つ */
+.info{
+    display: flex;
+    flex-direction: column; /* 縦並びに配置 */
+    gap: 15px; /* 要素間のスペース */
+    flex: 1; /* 残りのスペースを占有 */
 }
 
-.about-info {
-    margin-top: 20px;
-}
-
-.about-info p {
-    margin: 5px 0;
+/* 店舗紹介のレイアウト */
+div.about-text {
+    font-family: "Noto Serif", serif; 
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: regular;
+    font-variation-settings:"wdth" 100;
+    margin: 1em 0;
+    margin-bottom: 0;
     font-size: 0.9em;
 }
 
-.linelink {
-    margin-top: 20px;
-    text-align: center;
+/* 店舗情報のレイアウト */
+div.about-info {
+    font-family: "Noto Serif", serif; 
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: regular;
+    font-variation-settings:"wdth" 100;
+    margin: 0 0 1em 0;
+    border-left: solid 1px #000;
+}
+.about-info p{
+    margin-bottom: 0.5em;
+    padding-left: 10px;
+}
+.about-info span{
+    margin-left: 1em;
+}
+/* 電話番号のレイアウト */
+p.info-tal{
+    font-size: 30px;
+    font-weight: 400;
+}
+span.info-tel{
+    margin-left: 5em;
+}
+/* 営業時間のレイアウト */
+span.info-time{
+    margin-left: 1em;
+}
+/* 定休日のレイアウト */
+span.info-holl{
+    margin-left: 2em;
+}
+/* 駐車場のレイアウト */
+span.info-per{
+    margin-left: 2em;
+}
+/* 住所のレイアウト */
+span.info-st{
+    font-size: 0.8em;
+    margin-left: 4em;
 }
 
+/* LINEリンクのスタイル */
+.linelink {
+    display: flex; /* Flexboxを有効化 */
+    align-items: center; /* 垂直方向を中央揃え */
+    gap: 10px; /* 要素間のスペースを設定 */
+}
+.linelink p{
+    font-family: "Noto Serif", serif; 
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: regular;
+    font-variation-settings:"wdth" 100;
+    font-size: 20px;
+    margin: 0;
+    margin-left: 40px;
+}
+/* ボタンのレイアウト */
 .linelink button {
-    background-color: #28a745;
-    color: #fff;
-    border: none;
+    margin-left: 40px;
+    background-color: #47e40e;
     padding: 10px 20px;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
 }
-
-.linelink button:hover {
-    background-color: #218838;
+a.linelink{
+    text-decoration: none;
+    color: #fff;
+    font-family: "Kosugi Maru", sans-serif;
+    font-weight: 600;
+    font-style: bold;
 }
 
 /* MENUセクション */
