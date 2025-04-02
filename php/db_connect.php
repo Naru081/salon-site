@@ -1,13 +1,18 @@
 <?php
-$host = "localhost"; 
-$dbname = "mydb";    // データベース名
-$username = "mydbuser";  // ユーザー名
-$password = "nd2Ur3Cr"; // パスワード
+function getDatabaseConnection() {
+    $servername = "localhost";  // MySQLサーバー
+    $username = "mydbuser";     // 作成したユーザー
+    $password = "uB9kdA2";      // 設定したパスワード
+    $dbname = "mydb";           // データベース名 
 
-try {
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $e) {
-    die("データベース接続エラー: " . $e->getMessage());
+    try {
+        // MySQLに接続
+        $pdo = new PDO("mysql:host=$servername;dbname=$dbname;charset=utf8", $username, $password);
+        // エラーモードを例外に設定
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        return $pdo;
+    } catch (PDOException $e) {
+        die("接続失敗: " . $e->getMessage());
+    }
 }
 ?>
