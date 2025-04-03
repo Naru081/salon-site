@@ -282,11 +282,14 @@ p.menu-text{
     font-weight: 500;
     font-style: regular;
 }
+
 /* デスクトップ用画像を表示 */
 img.desktop-image {
-    display: block;
+    display: flex;
+    margin: auto;
+    justify-items: center;
+    width: 100%;
 }
-/* デスクトップをデフォルトに */
 img.mobile-image {
     display: none;
 }
@@ -419,9 +422,10 @@ img.mobile-image {
     img.desktop-image {
         display: none;
     }
-
     img.mobile-image {
-        display: block;
+        display: flex;
+        margin: auto;
+        justify-items: center;
     }
 
     /* フッターのテキストを中央揃えに */
