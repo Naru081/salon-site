@@ -117,11 +117,22 @@ body {
     margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid #ddd;
+    display: flex; 
+    flex-direction: row; 
+    justify-content: left;
+    align-items: left;
 }
 
-/* ダミーテキスト */
-.news-item p {
+/* NEWS内のテキスト */
+p.news-day{
+    display:inline-block;
     margin: 0;
+    padding: auto;
+}
+p.news-name {
+    display:block;
+    text-align: center;
+    margin: 0 auto;
     font-size: 1em;
 }
 

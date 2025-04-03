@@ -87,8 +87,8 @@ echo '<script src="/java/index.java" defer></script>';
             <div class="news-list">
                 <?php foreach ($newsItems as $news): ?>
                     <div class="news-item">
-                        <p><strong><?php echo htmlspecialchars($news['day'], ENT_QUOTES, 'UTF-8'); ?></strong></p>
-                        <p><?php echo htmlspecialchars($news['name'], ENT_QUOTES, 'UTF-8'); ?></p>
+                        <p class="news-day"><strong><?php echo htmlspecialchars($news['day'], ENT_QUOTES, 'UTF-8'); ?></strong></p>
+                        <p class="news-name"><?php echo htmlspecialchars($news['name'], ENT_QUOTES, 'UTF-8'); ?></p>
                     </div>
                 <?php endforeach; ?>
             </div>
