@@ -83,22 +83,6 @@ $newsItems = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         <p><strong><?php echo htmlspecialchars($news['day'], ENT_QUOTES, 'UTF-8'); ?></strong></p>
                         <p><?php echo htmlspecialchars($news['name'], ENT_QUOTES, 'UTF-8'); ?></p>
                     </div>
-                    <div class="news-item">
-                       <p><strong><?php echo htmlspecialchars($news['day'], ENT_QUOTES, 'UTF-8'); ?></strong></p>
-                        <p><?php echo htmlspecialchars($news['name'], ENT_QUOTES, 'UTF-8'); ?></p>  
-                    </div>
-                    <div class="news-item">
-                        <p><strong><?php echo htmlspecialchars($news['day'], ENT_QUOTES, 'UTF-8'); ?></strong></p>
-                        <p><?php echo htmlspecialchars($news['name'], ENT_QUOTES, 'UTF-8'); ?></p>  
-                    </div>
-                    <div class="news-item">
-                        <p><strong><?php echo htmlspecialchars($news['day'], ENT_QUOTES, 'UTF-8'); ?></strong></p>
-                        <p><?php echo htmlspecialchars($news['name'], ENT_QUOTES, 'UTF-8'); ?></p> 
-                    </div>
-                    <div class="news-item">
-                        <p><strong><?php echo htmlspecialchars($news['day'], ENT_QUOTES, 'UTF-8'); ?></strong></p>
-                        <p><?php echo htmlspecialchars($news['name'], ENT_QUOTES, 'UTF-8'); ?></p>  
-                    </div>
                 <?php endforeach; ?>
             </div>
         </section>
