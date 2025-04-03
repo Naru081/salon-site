@@ -48,6 +48,7 @@ echo '<script src="/java/index.java" defer></script>';
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/popup.css">
     <script src="/java/index.java" defer></script>
     <title>Kamiann.com</title>
 </head>
@@ -92,14 +93,29 @@ echo '<script src="/java/index.java" defer></script>';
             <h2 class="section-title">NEWS</h2>
             <h3 class="sub-titile">お知らせ</h3>
             <div class="news-list">
-                <?php foreach ($newsItems as $news): ?>
+                <?php foreach ($newsItems as $index => $news): ?>
                     <div class="news-item">
                         <p class="news-day"><strong><?php echo htmlspecialchars($news['day'], ENT_QUOTES, 'UTF-8'); ?></strong></p>
-                        <p class="news-name"><?php echo htmlspecialchars($news['name'], ENT_QUOTES, 'UTF-8'); ?></p>
+                        <input type="checkbox" id="popup-<?php echo $index; ?>">
+                        <label class="popup-open" for="popup-<?php echo $index; ?>">
+                            <p class="news-name"><?php echo htmlspecialchars($news['name'], ENT_QUOTES, 'UTF-8'); ?></p>
+                        </label>  
+                        <div class="popup-overlay">
+                            <div class="popup-window">
+                                <p class="news-mane"><?php echo nl2br(htmlspecialchars($news['news'], ENT_QUOTES, 'UTF-8')); ?></p>
+                                <label class="popup-close" for="popup-<?php echo $index; ?>">
+                                    <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                                        <line x1="0" y1="0" x2="18" y2="18" stroke="black" stroke-width="3"></line>
+                                        <line x1="0" y1="18" x2="18" y2="0" stroke="black" stroke-width="3"></line>
+                                    </svg>
+                                </label>
+                            </div>
+                        </div>
                     </div>
                 <?php endforeach; ?>
             </div>
         </section>
+
 
         <!-- ABOUT -->
         <section id="about">
