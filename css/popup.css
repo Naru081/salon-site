@@ -31,10 +31,14 @@ input[type="checkbox"]:checked ~ .popup-overlay {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border: 0.5em solid #000000;
 }
 
 .news-mane {
     margin: 0;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .news-mane:not(:last-of-type) {
@@ -43,6 +47,7 @@ input[type="checkbox"]:checked ~ .popup-overlay {
 
 .popup-close {
     cursor: pointer;
+    margin-bottom: 1px;
     position: absolute;
     top: -26px;
     right: 0;
