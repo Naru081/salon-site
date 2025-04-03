@@ -15,6 +15,13 @@ $newsItems = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
 
+<?php
+echo '<link rel="stylesheet" href="/css/style.css">';
+?>
+<?php
+echo '<script src="/java/index.java" defer></script>';
+?>
+
 
 <!-- HTML -->
 <!DOCTYPE html>
@@ -33,8 +40,8 @@ $newsItems = $stmt->fetchAll(PDO::FETCH_ASSOC);
         rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Kosugi+Maru&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" 
         rel="stylesheet">
-    <link rel="stylesheet" href="./../css/style.css">
-    <script src="./../java/index.java" defer></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/java/index.java" defer></script>
     <title>Kamiann.com</title>
 </head>
 
@@ -70,7 +77,7 @@ $newsItems = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         <!-- トップ画像 -->
         <section id="top-image">
-            <img src="./../img/top.jpg" alt="店名と店の写真">
+            <img src="/img/top.jpg" alt="店名と店の写真">
         </section>
 
         <!-- NEWS -->
@@ -93,7 +100,7 @@ $newsItems = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <h3 class="sub-titile">店舗情報</h3>
             <div class="about-content">
                 <div class="about-img">
-                    <img src="./../img/shop1.jpg" alt="店内の写真">
+                    <img src="/img/shop1.jpg" alt="店内の写真">
                 </div>
                 <div class="info">
                     <!-- 店舗の説明 -->
