@@ -6,14 +6,13 @@ require_once __DIR__ . '/db_connect.php';
 $pdo = getDatabaseConnection();
 
 // データ取得クエリ
-$query = "SELECT * FROM messages";
+$query = "SELECT day, name, news FROM messages ORDER BY day DESC";
 $stmt = $pdo->prepare($query);
 $stmt->execute();
 
 // 結果を取得
-$messages = $stmt->fetchAll(PDO::FETCH_ASSOC);
+$newsItems = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-var_dump($messages);
 ?>
 
 
@@ -79,21 +78,28 @@ var_dump($messages);
             <h2 class="section-title">NEWS</h2>
             <h3 class="sub-titile">お知らせ</h3>
             <div class="news-list">
-                <div class="news-item">
-                    <p>2026.03/01 重要：価格改定のお知らせ</p>
-                </div>
-                <div class="news-item">
-                    <p>2026.2/24 臨時休業のお知らせ</p>
-                </div>
-                <div class="news-item">
-                    <p>2025.12/24 年末年始による休業のお知らせ</p>
-                </div>
-                <div class="news-item">
-                    <p>2025.10/02 駐車場についてのお願い</p>
-                </div>
-                <div class="news-item">
-                    <p>2025.08/07 お盆休みによる休業について</p>
-                </div>
+                <?php foreach ($newsItems as $news): ?>
+                    <div class="news-item">
+                        <p><strong><?php echo htmlspecialchars($news['day'], ENT_QUOTES, 'UTF-8'); ?></strong></p>
+                        <p><?php echo htmlspecialchars($news['name'], ENT_QUOTES, 'UTF-8'); ?></p>
+                    </div>
+                    <div class="news-item">
+                       <p><strong><?php echo htmlspecialchars($news['day'], ENT_QUOTES, 'UTF-8'); ?></strong></p>
+                        <p><?php echo htmlspecialchars($news['name'], ENT_QUOTES, 'UTF-8'); ?></p>  
+                    </div>
+                    <div class="news-item">
+                        <p><strong><?php echo htmlspecialchars($news['day'], ENT_QUOTES, 'UTF-8'); ?></strong></p>
+                        <p><?php echo htmlspecialchars($news['name'], ENT_QUOTES, 'UTF-8'); ?></p>  
+                    </div>
+                    <div class="news-item">
+                        <p><strong><?php echo htmlspecialchars($news['day'], ENT_QUOTES, 'UTF-8'); ?></strong></p>
+                        <p><?php echo htmlspecialchars($news['name'], ENT_QUOTES, 'UTF-8'); ?></p> 
+                    </div>
+                    <div class="news-item">
+                        <p><strong><?php echo htmlspecialchars($news['day'], ENT_QUOTES, 'UTF-8'); ?></strong></p>
+                        <p><?php echo htmlspecialchars($news['name'], ENT_QUOTES, 'UTF-8'); ?></p>  
+                    </div>
+                <?php endforeach; ?>
             </div>
         </section>
 
