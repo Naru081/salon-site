@@ -5,13 +5,19 @@ require_once __DIR__ . '/db_connect.php';
 // データベース接続を取得
 $pdo = getDatabaseConnection();
 
-// データ取得クエリ
+// お知らせのデータ取得クエリ
 $query = "SELECT day, name, news FROM messages ORDER BY day DESC";
 $stmt = $pdo->prepare($query);
 $stmt->execute();
 
+// メニュー表の画像データ取得クエリ
+$imageQuery = "SELECT id, image_path FROM menu_images";
+$imageStmt = $pdo->prepare($imageQuery);
+$imageStmt->execute();
+
 // 結果を取得
 $newsItems = $stmt->fetchAll(PDO::FETCH_ASSOC);
+$menuImages = $imageStmt->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
 
@@ -142,10 +148,18 @@ echo '<script src="/java/index.java" defer></script>';
                 <p class="menu-text">当店では、学割等の割引サービスを実施しています。気軽に、ご利用下さい。</p>
                 <p class="menu-text">会計は、電子決済や、クレジットカードも対応可能です。</p>
             </div>
-            <!-- ダミーデータ -->
-            <div class="menu-item">
-                <p>dummy</p>
-            </div>
+            <!-- メニュー画像データ -->
+    <div class="menu-images">
+        <?php foreach ($menuImages as $image): ?>
+            <?php if ($image['id'] == 1): ?>
+                <!-- デスクトップ用画像 -->
+                <img src="<?php echo htmlspecialchars($image['image_path'], ENT_QUOTES, 'UTF-8'); ?>" alt="メニュー画像(PC)" class="desktop-image">
+            <?php elseif ($image['id'] == 2): ?>
+                <!-- スマホ用画像 -->
+                <img src="<?php echo htmlspecialchars($image['image_path'], ENT_QUOTES, 'UTF-8'); ?>" alt="メニュー画像(スマホ)" class="mobile-image">
+         <?php endif; ?>
+        <?php endforeach; ?>
+    </div>
         </section>
 
         <!-- ACCESS -->

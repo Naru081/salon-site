@@ -282,13 +282,13 @@ p.menu-text{
     font-weight: 500;
     font-style: regular;
 }
-/* ダミーボックス */
-.menu-item {
-    background-color: #f8f9fa;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
+/* デスクトップ用画像を表示 */
+img.desktop-image {
+    display: block;
+}
+/* デスクトップをデフォルトに */
+img.mobile-image {
+    display: none;
 }
 
 /* ACCESSセクション */
@@ -413,6 +413,15 @@ p.menu-text{
     .about-img img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* メニューをスマホ用画像に切り替える */
+    img.desktop-image {
+        display: none;
+    }
+
+    img.mobile-image {
+        display: block;
     }
 
     /* フッターのテキストを中央揃えに */
