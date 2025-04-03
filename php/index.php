@@ -25,6 +25,9 @@ $menuImages = $imageStmt->fetchAll(PDO::FETCH_ASSOC);
 echo '<link rel="stylesheet" href="/css/style.css">';
 ?>
 <?php
+echo'<link rel="stylesheet" href="/css/popup.css">';
+?>
+<?php
 echo '<script src="/java/index.java" defer></script>';
 ?>
 
@@ -46,10 +49,9 @@ echo '<script src="/java/index.java" defer></script>';
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Kosugi+Maru&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" 
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/popup.css">
-    <script src="/java/index.java" defer></script>
     <title>Kamiann.com</title>
 </head>
 

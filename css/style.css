@@ -48,7 +48,7 @@ body {
 }
 
 /* ナビゲーションのスタイル */
-.navbar-nav{
+#header.navbar-nav{
     margin-top: 1em;
     margin-bottom: 0.5em;
     font-weight: bold;
@@ -117,30 +117,41 @@ body {
     margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid #b2b2b2;
-    display: flex; 
-    flex-direction: row; 
-    justify-content: left;
-    align-items: left;
 }
 
-/* NEWS内のテキスト */
-p.news-day{
-    display:inline-block;
-    margin: 0;
-    padding: auto;
+.news-item {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+p.news-day {
     font-family: "M PLUS Rounded 1c", sans-serif;
     font-weight: 400;
+    margin: 0;
     font-style: normal;
+    text-align: left;
+    white-space: nowrap;
+    flex-shrink: 0; /* 幅が狭くならないようにする */
 }
+
 p.news-name {
-    display:block;
     font-family: "M PLUS Rounded 1c", sans-serif;
     font-weight: 700;
     font-style: normal;
     text-align: center;
-    margin: 0 auto;
+    margin: 0;
     font-size: 1em;
+    position: absolute; 
+    left: 50%;
+    bottom: 30%;
+    transform: translateX(-50%);
+    width: max-content;
 }
+
 
 
 /* ABOUTセクション */
