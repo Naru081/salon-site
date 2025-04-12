@@ -2,7 +2,7 @@
 body {
     font-family:'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #FFFCF7;
+    background-color: #fff8eb;
     color: #000;
 }
 
@@ -100,7 +100,7 @@ body {
 
 /* NEWSセクション */
 #news {
-    background-color: #FFFCF7;
+    background-color: #fff8eb;
     padding: 40px 20px;
     margin: 20px auto;
     max-width: 800px;
@@ -394,9 +394,9 @@ img.mobile-image {
        display: none;
     }
     #top-imagePh img {
+        display: block;
         width: 100%;
         height: auto;
-        display: block;
     }
 
     /* ABOUTの調整 */
