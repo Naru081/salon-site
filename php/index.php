@@ -45,8 +45,6 @@ echo '<script src="/java/index.java" defer></script>';
     <!-- Googleフォント読み込み -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Kosugi+Maru&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" 
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
@@ -89,6 +87,10 @@ echo '<script src="/java/index.java" defer></script>';
         <section id="top-image">
             <img src="/img/top.jpg" alt="店名と店の写真">
         </section>
+         <!-- スマホ表示用 -->
+        <section id="top-imagePh">
+            <img src="./../img/top-imagePh.jpg" alt="店名と店の写真">
+         </section>
 
         <!-- NEWS -->
         <section id="news">
