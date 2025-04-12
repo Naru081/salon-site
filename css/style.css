@@ -262,7 +262,7 @@ span.info-st{
     font-variation-settings:"wdth" 100;
     font-size: 20px;
     margin: 0;
-    margin-left: 40px;
+    margin-left: 1em;
 }
 /* ボタンのレイアウト */
 .linelink button {
@@ -401,21 +401,18 @@ img.mobile-image {
 
     /* ABOUTの調整 */
     /* LINEリンクを縦並びに */
-    .linelink {
-        flex-direction: column;
-        gap: 5px;
-        align-items: flex-start;
-    }
-    .linelink p {
-        margin-left: 0;
+    div.linelink {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
     /* LINEリンクのボタン設定 */
-    .linelink button {
-        margin-left: 0;
-        width: 50%;
+    div.linelink button {
+        width: 40%;
     }
     a.linelink{
-        align-items: center;
+        font-size: 18px;
+        justify-content: center;
     }
 
     /* NEWSセクションの調整 */
