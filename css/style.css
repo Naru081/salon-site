@@ -458,6 +458,6 @@ img.mobile-image {
         font-size: 50%;
         flex-direction: row;
         text-align: center;
-        margin-left: 1;
+        margin-left: 1em;
     }
 }
