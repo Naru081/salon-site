@@ -92,6 +92,10 @@ body {
     height: auto;
     display: block;
 }
+/* スマホ表示用 */
+#top-imagePh img{
+    display: none;
+}
 
 
 /* NEWSセクション */
@@ -383,6 +387,16 @@ img.mobile-image {
     .nav-link {
         padding: 10px 20px;
         font-size: 60%;
+    }
+
+    /* トップ画像の調整 */
+    #top-image img {
+       display: none;
+    }
+    #top-imagePh img {
+        width: 100%;
+        height: auto;
+        display: block;
     }
 
     /* ABOUTの調整 */
