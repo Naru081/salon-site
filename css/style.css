@@ -38,13 +38,9 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    height: auto;
     z-index: 1000;
-    background-color: #ffffff;  
-}
-
-/* ヘッダーの下のコンテンツが隠れないように調整 */
-body {
-    padding-top: 50px;
+    background-color: #ffffff;
 }
 
 /* ナビゲーションのスタイル */
@@ -87,10 +83,9 @@ body {
 }
 
 /* トップ画像 */
-#top-image img {
+#top-image img{
     width: 100%;
     height: auto;
-    display: block;
 }
 /* スマホ表示用 */
 #top-imagePh img{
@@ -390,13 +385,15 @@ img.mobile-image {
     }
 
     /* トップ画像の調整 */
-    #top-image img {
+    #top-image img{
        display: none;
     }
-    #top-imagePh img {
+    #top-imagePh img{
         display: block;
         width: 100%;
         height: auto;
+        object-fit: cover;
+        background-repeat: no-repeat;
     }
 
     /* ABOUTの調整 */
