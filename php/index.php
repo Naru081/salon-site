@@ -48,6 +48,8 @@ echo '<script src="/java/index.java" defer></script>';
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Kosugi+Maru&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" 
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <!-- FontAwesomeの読み込み -->
+    <script src="https://kit.fontawesome.com/80b6c9e945.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/popup.css">
     <title>Kamiann.com</title>
@@ -204,6 +206,15 @@ echo '<script src="/java/index.java" defer></script>';
         <div class="top">
             <button type="button">▲TOP</button>
         </div>
+         <!-- SNSリンク -->
+         <ul class="sns-links">
+            <li><a href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiamEifQ%3D%3D%22%7D">
+                <i class="fa-brands fa-square-x-twitter fa-2x" style="color: #ffffff;"></i></a></li>
+            <li><a href="https://www.facebook.com/?locale2=ja_JP&_rdr">
+                <i class="fa-brands fa-square-facebook fa-2x" style="color: #ffffff;"></i></a></li>
+            <li><a href="https://www.instagram.com/accounts/login/?next=%2Fpeter_gomez%2F&source=private_profile&locale=ja-JP">
+                <i class="fa-brands fa-instagram fa-2x" style="color: #ffffff;"></i></a></li>
+        </ul>
         <!-- 店舗情報 -->
         <div class="info">
             <p class="info-name">髪庵</p>
