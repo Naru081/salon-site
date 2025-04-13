@@ -361,6 +361,17 @@ img.mobile-image {
     font-size: 1em;
 }
 
+/* SNSリンクのスタイル */
+#footer ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+
 /* メディアクエリの設定 */
 @media (max-width: 768px) {
     /* ヘッダーの調整 */
