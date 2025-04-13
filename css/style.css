@@ -35,10 +35,9 @@ h3 {
 /* ヘッダーを追従させる */
 header {
     position: fixed;
-    top: 0;
     left: 0;
     width: 100%;
-    height: auto;
+    height: 60px;
     z-index: 1000;
     background-color: #ffffff;
 }
@@ -49,32 +48,23 @@ header {
     margin-bottom: 0.5em;
     font-weight: bold;
     font-size: 1em;
-    transition: color 0.3s ease;
+}
+a.nav-link{
+    margin-top: 0.5em;
     color: #2D6A4F;
 }
-/* FlexBoxの設定 */
-.nav-fill{
-    display: flex; /* フレックスボックスを有効化 */
-    justify-content: space-around; /* 等間隔で配置 */
-    align-items: center; /* 垂直方向に中央揃え */
-    padding:0; /* 不要な余白を削除 */
-}
-.nav-link{
-    padding: 0.5em 3em;
-    color: #2D6A4F;
-}
-.nav-link:hover{
+a.nav-link:hover{
     color: #1B4D3E;;
 }
 /* 元の色を維持 */
-.nav-link:focus,
-.nav-link:active {
+a.nav-link:focus,
+a.nav-link:active {
     color: #2D6A4F; 
     text-decoration: none; 
     outline: none; 
 }
 /* ナビのフォント */
-.nav-link{
+a.nav-link{
     font-family: "Noto Serif", serif; 
     font-optical-sizing: auto;
     font-weight: 500;
@@ -379,9 +369,10 @@ img.mobile-image {
         align-items: center;
         padding: 0;
     }
-    .nav-link {
+    a.nav-link {
         padding: 10px 20px;
-        font-size: 60%;
+        margin-top: 1em;
+        font-size: 70%;
     }
 
     /* トップ画像の調整 */
@@ -413,14 +404,16 @@ img.mobile-image {
     }
 
     /* NEWSセクションの調整 */
-    #news {
-        padding: 20px 10px;
+    div.news-list {
         max-width: 100%;
     }
-
     .news-item {
-        font-size: 0.9em;
+        font-size: 75%;
     }
+    p.news-name{
+        margin-left: 8%;
+    }
+   
 
     /* ABOUTセクションを縦並びに */
     .about-content {
