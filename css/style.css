@@ -372,7 +372,10 @@ img.mobile-image {
     justify-content: center;
     gap: 35px;
 }
-
+/* SNSリンクのアイコンカラー */
+.white-color {
+    color: #fff;
+}
 
 /* メディアクエリの設定 */
 @media (max-width: 768px) {

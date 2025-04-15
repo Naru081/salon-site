@@ -213,11 +213,11 @@ echo '<script src="/java/index.java" defer></script>';
          <!-- SNSリンク -->
          <ul class="sns-links">
             <li><a href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiamEifQ%3D%3D%22%7D">
-                <i class="fa-brands fa-square-x-twitter fa-2x" style="color: #ffffff;"></i></a></li>
+                <i class="fa-brands fa-square-x-twitter fa-2x white-color"></i></a></li>
             <li><a href="https://www.facebook.com/?locale2=ja_JP&_rdr">
-                <i class="fa-brands fa-square-facebook fa-2x" style="color: #ffffff;"></i></a></li>
+                <i class="fa-brands fa-square-facebook fa-2x white-color"></i></a></li>
             <li><a href="https://www.instagram.com/accounts/login/?next=%2Fpeter_gomez%2F&source=private_profile&locale=ja-JP">
-                <i class="fa-brands fa-instagram fa-2x" style="color: #ffffff;"></i></a></li>
+                <i class="fa-brands fa-instagram fa-2x white-color"></i></a></li>
         </ul>
         <!-- 店舗情報 -->
         <div class="info">
