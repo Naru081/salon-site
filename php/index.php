@@ -57,6 +57,8 @@ echo '<script src="/java/index.java" defer></script>';
     <script src="https://kit.fontawesome.com/80b6c9e945.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/popup.css">
+    <!-- アニメーション追加　-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
 </head>
 
 <body>
@@ -213,11 +215,11 @@ echo '<script src="/java/index.java" defer></script>';
          <!-- SNSリンク -->
          <ul class="sns-links">
             <li><a href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiamEifQ%3D%3D%22%7D">
-                <i class="fa-brands fa-square-x-twitter fa-2x white-color"></i></a></li>
+                <i class="fa-brands fa-square-x-twitter fa-2x white-color faa-vertical animated-hover"></i></a></li>
             <li><a href="https://www.facebook.com/?locale2=ja_JP&_rdr">
-                <i class="fa-brands fa-square-facebook fa-2x white-color"></i></a></li>
+                <i class="fa-brands fa-square-facebook fa-2x white-color faa-vertical animated-hover"></i></a></li>
             <li><a href="https://www.instagram.com/accounts/login/?next=%2Fpeter_gomez%2F&source=private_profile&locale=ja-JP">
-                <i class="fa-brands fa-instagram fa-2x white-color"></i></a></li>
+                <i class="fa-brands fa-instagram fa-2x white-color faa-vertical animated-hover"></i></a></li>
         </ul>
         <!-- 店舗情報 -->
         <div class="info">

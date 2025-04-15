@@ -376,6 +376,9 @@ img.mobile-image {
 .white-color {
     color: #fff;
 }
+.white-color:hover {
+    color: #99d98c;
+}
 
 /* メディアクエリの設定 */
 @media (max-width: 768px) {
