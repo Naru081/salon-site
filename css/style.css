@@ -453,11 +453,9 @@ img.mobile-image {
         justify-items: center;
     }
 
-    /* フッターのテキストを中央揃えに */
+    /* フッターの調整 */
     #footer .info{
-        font-size: 50%;
-        flex-direction: row;
-        text-align: center;
-        margin-left: 1em;
+        font-size: 60%;
+        margin-top: 0.5rem;
     }
 }
