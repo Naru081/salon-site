@@ -148,18 +148,31 @@ echo '<script src="/java/index.java" defer></script>';
                         <p>忙しい日常を忘れ、ホッと一息つけるひとときをお過ごしください。皆さまのご来店を心よりお待ちしております。</p>
                     </div>
                     <!-- 店舗の情報 -->
-                    <div class="about-info">
-                        <p class="info-tal">TEL<span class="info-tal">0995-42-7852</span></p>
-                        <p>営業時間 <span class="info-time">10:00〜19:00</span></p>
-                        <p>定休日 <span class="info-holl">第一週目と第四週目の月曜日</span></p>
-                        <p>駐車場 <span class="info-per">有り(4台まで駐車可能)</span></p>
-                        <p>住所 <span class="info-st">〒899-5106 鹿児島県霧島市隼人町内山田1丁目11-6</spam>
-                        </p>
-                    </div>
-                    <!-- LINEのリンク -->
-                    <div class="linelink">
+                    <table class="about-info">
+                        <tr class="info-tal">
+                            <th>TEL</th>
+                            <td>0995-42-XXXX</td>
+                        </tr>
+                        <tr>
+                            <th>営業時間</th>
+                            <td>10:00〜20:00</td>
+                        </tr>
+                        <tr>
+                            <th>定休日</th>
+                            <td>第一週目と第四週目の月曜日</td>
+                        </tr>
+                        <tr>
+                            <th>駐車場</th>
+                            <td>有り(4台まで駐車可能)</td>
+                        </tr>
+                        <tr>
+                            <th>住所</th>
+                            <td>〒899-5106 鹿児島県霧島市隼人町内山田X-XX-XX</td>
+                        </tr>
+                    </table>
+                    <div class="line">
                         <p>LINE予約</p>
-                        <button type="button">
+                        <button type="button" class="linelink">
                             <a class="linelink" href="https://line.me/ti/p/aXy2ujKpEj" target="_blank"
                                 rel="noopener noreferrer">友達追加する</a>
                         </button>
@@ -222,11 +235,23 @@ echo '<script src="/java/index.java" defer></script>';
                 <i class="fa-brands fa-instagram fa-2x white-color faa-vertical animated-hover"></i></a></li>
         </ul>
         <!-- 店舗情報 -->
-        <div class="info">
-            <p class="info-name">髪庵</p>
-            <p>TEL <span class="info1">0995-42-7852</span></p>
-            <p>営業時間 <span class="info2">10:00〜19:00</span></p>
-            <p>住所 <span class="info3">〒899-5106 鹿児島県霧島市隼人町内山田1丁目11-6</span></p>
+        <table class="info">
+            <tr>
+                <th>TEL</th>
+                <td>0995-42-XXXX</td>
+            </tr>
+            <tr>
+                <th>営業時間</th>
+                <td>10:00〜20:00</td>
+            </tr>
+            <tr>
+                <th>住所</th>
+                <td>〒899-5106 鹿児島県霧島市隼人町内山田X-XX-XX</td>
+            </tr>
+        </table>
+        <div class="copyright">
+            <small>&copy;2010 髪庵</small>
+
         </div>
     </footer>
     <!-- BootstrapのJavaScript読み込み -->

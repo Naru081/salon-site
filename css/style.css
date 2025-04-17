@@ -306,6 +306,7 @@ img.mobile-image {
     font-variation-settings:"wdth" 100;
 }
 #footer .info{
+    color: #fff;
     width: 100%;
     max-width: 544px;
     margin: auto;
@@ -445,7 +446,7 @@ img.mobile-image {
 
     /* フッターの調整 */
     #footer .info{
-        font-size: 60%;
+        font-size: 75%;
         margin-top: 0.5rem;
         padding-left: 0.1rem;
     }
