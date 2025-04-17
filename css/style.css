@@ -7,9 +7,7 @@ body {
     background-color: #fff8eb;
     color: #000;
 }
-
-/* タイトルのスタイル */
-.section-title{
+.section-title{ /* タイトルのスタイル */
     font-family: "Crimson Text", serif;
     font-weight: 400;
     font-style: normal;
@@ -18,9 +16,7 @@ body {
     border-left: solid 1px #000;
     text-indent: 10px;
 }
-
-/* サブタイトルのスタイル */
-h3 {
+h3 {    /* サブタイトルのスタイル */
     font-family: "Noto Serif", serif;
     font-optical-sizing: auto;
     font-weight: 300;
@@ -34,6 +30,8 @@ h3 {
     text-indent: 30px;
 }
 
+
+/* ヘッダー */
 /* ヘッダーを追従させる */
 header {
     position: fixed;
@@ -43,7 +41,6 @@ header {
     z-index: 1000;
     background-color: #ffffff;
 }
-
 /* ナビゲーションのスタイル */
 #header.navbar-nav{
     margin-top: 1em;
@@ -326,36 +323,33 @@ img.mobile-image {
     font-style: regular;
     font-variation-settings:"wdth" 100;
 }
-#footer div.info p{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+#footer .info{
+    width: 100%;
+    max-width: 544px;
+    margin: auto;
+    margin-left: 0;
+    padding: 0 1.5rem;
+    padding-left:0.5rem ;
+    border-spacing: 0;
     text-align: left;
-    align-items: flex-start;
-    margin-left: 1em;
-    font-size: 70%;
-    margin-bottom: 0;
+    border-left: 1px solid #fff;
 }
-#footer div.info{
-    margin-left: 0.5em;
-    margin-bottom: 2em;
-    border-left: solid 1px;
+.info th{
+    text-align: left;
+    padding: 0.5rem;
 }
-
-/* テキストの詳細設定 */
-#footer span.info1{
-    margin-left: 3em;
+.info td{
+    padding: 0.5rem 0;
 }
-#footer span.info2{
-    margin-left: 1em;
-}
-#footer span.info3{
-    margin-left: 3em;
+.info th,
+.info td{
+    font-size: 80%;
+    font-weight: normal;
 }
 
 /* ボタンのレイアウト */
 #footer button {
-    background-color: #47e40e00;
+    background-color: #738290;
     color: #fff;
     padding: 10px;
     border: none;
@@ -460,7 +454,7 @@ img.mobile-image {
     }
 
     /* フッターのテキストを中央揃えに */
-    #footer div.info p {
+    #footer .info{
         font-size: 50%;
         flex-direction: row;
         text-align: center;
