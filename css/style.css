@@ -373,6 +373,14 @@ img.mobile-image {
 .white-color:hover {
     color: #99d98c;
 }
+/* コピーライトのスタイル */
+.copyright {
+    background-color: #738290;
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 0;
+    color: #fff;
+}
 
 /* メディアクエリの設定 */
 @media (max-width: 768px) {
@@ -457,5 +465,12 @@ img.mobile-image {
     #footer .info{
         font-size: 60%;
         margin-top: 0.5rem;
+        padding-left: 0.1rem;
+    }
+
+    /*コピーライトの調整 */
+    .copyright{
+        font-size: 70%;
+        padding-top: 1rem;
     }
 }
