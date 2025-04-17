@@ -10,10 +10,11 @@
     <!-- Googleフォント読み込み -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Kosugi+Maru&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Kosugi+Maru&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <!-- FontAwesomeの読み込み -->
-        <script src="https://kit.fontawesome.com/80b6c9e945.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/80b6c9e945.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./../css/style.css">
     <script src="./../java/index.java" defer></script>
     <title>Kamiann.com</title>
@@ -54,9 +55,9 @@
             <img src="./../img/top.jpg" alt="店名と店の写真">
         </section>
         <!-- スマホ表示用 -->
-         <section id="top-imagePh">
+        <section id="top-imagePh">
             <img src="./../img/top-imagePh.jpg" alt="店名と店の写真">
-         </section>
+        </section>
 
         <!-- NEWS -->
         <section id="news">
@@ -100,18 +101,31 @@
                         <p>忙しい日常を忘れ、ホッと一息つけるひとときをお過ごしください。皆さまのご来店を心よりお待ちしております。</p>
                     </div>
                     <!-- 店舗の情報 -->
-                    <div class="about-info">
-                        <p class="info-tal">TEL<span class="info-tal">0995-42-7852</span></p>
-                        <p>営業時間 <span class="info-time">10:00〜19:00</span></p>
-                        <p>定休日 <span class="info-holl">第一週目と第四週目の月曜日</span></p>
-                        <p>駐車場 <span class="info-per">有り(4台まで駐車可能)</span></p>
-                        <p>住所 <span class="info-st">〒899-5106 鹿児島県霧島市隼人町内山田1丁目11-6</spam>
-                        </p>
-                    </div>
-                    <!-- LINEのリンク -->
-                    <div class="linelink">
+                    <table class="about-info">
+                        <tr class="info-tal">
+                            <th>TEL</th>
+                            <td>0995-42-XXXX</td>
+                        </tr>
+                        <tr>
+                            <th>営業時間</th>
+                            <td>10:00〜20:00</td>
+                        </tr>
+                        <tr>
+                            <th>定休日</th>
+                            <td>第一週目と第四週目の月曜日</td>
+                        </tr>
+                        <tr>
+                            <th>駐車場</th>
+                            <td>有り(4台まで駐車可能)</td>
+                        </tr>
+                        <tr>
+                            <th>住所</th>
+                            <td>〒899-5106 鹿児島県霧島市隼人町内山田X-XX-XX</td>
+                        </tr>
+                    </table>
+                    <div class="line">
                         <p>LINE予約</p>
-                        <button type="button">
+                        <button type="button" class="linelink">
                             <a class="linelink" href="https://line.me/ti/p/aXy2ujKpEj" target="_blank"
                                 rel="noopener noreferrer">友達追加する</a>
                         </button>

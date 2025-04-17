@@ -173,7 +173,7 @@ p.news-name {
 .info{
     display: flex;
     flex-direction: column; /* 縦並びに配置 */
-    gap: 15px; /* 要素間のスペース */
+    /* 要素間のスペース */
     flex: 1; /* 残りのスペースを占有 */
 }
 
@@ -189,68 +189,50 @@ div.about-text {
     font-size: 0.9em;
 }
 
-/* 店舗情報のレイアウト */
-div.about-info {
+/* 店舗情報テーブル */
+table.about-info {
     font-family: "Noto Serif", serif; 
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: regular;
     font-variation-settings:"wdth" 100;
-    margin: 0 0 1em 0;
-    border-left: solid 1px #000;
 }
-.about-info p{
-    margin-bottom: 0.5em;
-    padding-left: 10px;
+#about tr{
+    border-left: 1px solid #000;
 }
-.about-info span{
-    margin-left: 1em;
+#about th{
+    display: flex;
+    padding-left: 1rem;
 }
-/* 電話番号のレイアウト */
-p.info-tal{
-    font-size: 30px;
-    font-weight: 400;
+#about td{
+    text-align: left;
 }
-span.info-tel{
-    margin-left: 5em;
+tr.info-tal{
+    font-size: 2rem;
 }
-/* 営業時間のレイアウト */
-span.info-time{
-    margin-left: 1em;
-}
-/* 定休日のレイアウト */
-span.info-holl{
-    margin-left: 2em;
-}
-/* 駐車場のレイアウト */
-span.info-per{
-    margin-left: 2em;
-}
-/* 住所のレイアウト */
-span.info-st{
-    font-size: 0.8em;
-    margin-left: 4em;
+
+div.line{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    gap: 5rem;
 }
 
 /* LINEリンクのスタイル */
-.linelink {
-    display: flex; /* Flexboxを有効化 */
-    align-items: center; /* 垂直方向を中央揃え */
-    gap: 10px; /* 要素間のスペースを設定 */
-}
-.linelink p{
+div.line p{
     font-family: "Noto Serif", serif; 
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: regular;
     font-variation-settings:"wdth" 100;
-    font-size: 20px;
-    margin: 0;
-    margin-left: 1em;
+    font-size: 25px;
+    margin-top: 1rem;
 }
 /* ボタンのレイアウト */
-.linelink button {
-    margin-left: 40px;
+button.linelink{
+    max-width: 200px;
+    margin: auto;
+    margin-left: 0;
     background-color: #47e40e;
     padding: 10px 20px;
     border: none;
@@ -329,7 +311,7 @@ img.mobile-image {
     margin: auto;
     margin-left: 0;
     padding: 0 1.5rem;
-    padding-left:0.5rem ;
+    padding-left:0.5rem;
     border-spacing: 0;
     text-align: left;
     border-left: 1px solid #fff;
@@ -442,8 +424,8 @@ img.mobile-image {
         gap: 10px;
     }
 
-    div.about-info{
-        font-size: 60%;
+    table.about-info{
+        font-size: 90%;
     }
 
     .about-img img {
