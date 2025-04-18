@@ -50,7 +50,7 @@ header {
 }
 a.nav-link{
     margin-top: 0.5em;
-    color: #2D6A4F;
+    color: #327758;
 }
 a.nav-link:hover{
     color: #1B4D3E;;
@@ -58,7 +58,7 @@ a.nav-link:hover{
 /* 元の色を維持 */
 a.nav-link:focus,
 a.nav-link:active {
-    color: #2D6A4F; 
+    color: #327758;; 
     text-decoration: none; 
     outline: none; 
 }
@@ -66,7 +66,7 @@ a.nav-link:active {
 a.nav-link{
     font-family: "Noto Serif", serif; 
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 700;
     font-style: regular;
     font-variation-settings:"wdth" 100;
 }
@@ -139,7 +139,26 @@ p.news-name {
     transform: translateX(-50%);
     width: max-content;
 }
-
+p.news-name:hover {
+    color: #1B4D3E;
+}
+p.news-name::after {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #327758;
+    bottom: -10px;
+    transform: scale(0, 1);
+    transform-origin: right top;
+    transition: transform 0.5s;
+  }
+  
+  p.news-name:hover::after {
+    transform: scale(1, 1);
+    transform-origin: left top;
+  }
 
 
 /* ABOUTセクション */
@@ -237,8 +256,11 @@ button.linelink{
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
     font-size: 1em;
+    transition: all .3s;
+}
+button.linelink:hover{
+    transform: scale(1.1,1.1);
 }
 a.linelink{
     text-decoration: none;
@@ -246,6 +268,8 @@ a.linelink{
     font-family: "Kosugi Maru", sans-serif;
     font-weight: 600;
     font-style: bold;
+    cursor: pointer;
+    transform: 0.5s all;
 }
 
 /* MENUセクション */
@@ -376,7 +400,7 @@ img.mobile-image {
     a.nav-link {
         padding: 10px 20px;
         margin-top: 1em;
-        font-size: 70%;
+        font-size: 68%;
     }
 
     /* トップ画像の調整 */
