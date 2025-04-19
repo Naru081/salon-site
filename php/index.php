@@ -189,7 +189,7 @@ echo '<script src="/java/index.java" defer></script>';
                 <p class="menu-text">当店では、学割等の割引サービスを実施しています。気軽に、ご利用下さい。</p>
                 <p class="menu-text">会計は、電子決済や、クレジットカードも対応可能です。</p>
             </div>
-            <!-- メニュー画像データ -->
+    <!-- メニュー画像データ -->
     <div class="menu-images">
         <?php foreach ($menuImages as $image): ?>
             <?php if ($image['id'] == 1): ?>
